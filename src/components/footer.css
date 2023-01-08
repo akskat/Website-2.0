@@ -1,0 +1,13 @@
+.footer {
+  background-color: #ccc;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.footer-filler {
+  padding-top: 50%;
+}
+
+.text-padder {
+    padding-left: 10%;
+}

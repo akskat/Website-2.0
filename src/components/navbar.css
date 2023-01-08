@@ -1,0 +1,109 @@
+nav {
+  background-color: #ccc;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border-bottom: #000;
+  border-radius: 5px;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+  padding: 0.5em;
+  font-family: "Arial", serif;
+  font-weight: bold;
+  font-size: 24px;
+  justify-content: space-evenly;
+  display: block;
+}
+
+
+@media (max-width: 860px) {
+  nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .navbar-left {
+    display: flex;
+    align-items: center;
+  }
+  .navbar-right {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 10%;
+  }
+  .navbar-logo {
+    display: block;
+  }
+  .navbar-menu {
+    display: none;
+    position: absolute;
+    top: 114px;
+    left: 0;
+    background: #ccc;
+    width: 100%;
+  }
+  .navbar-menu a {
+    display: block;
+    color: #000;
+    text-decoration: none;
+    padding: 0.5em;
+    font-family: "Arial", serif;
+    font-weight: bold;
+    font-size: 24px;
+    justify-content: space-evenly;
+    text-align: center;
+    
+  }
+  /* Display the menu when the "open" class is added */
+  .navbar-menu {
+    display: none;
+  }
+  .navbar-menu.open {
+    display: block;
+  }
+  /* Style the close button */
+  .navbar-close {
+    display: block;
+    cursor: pointer;
+    float: right;
+    margin-right: 10px;
+  }
+}
+
+@media (min-width: 861px) {
+  nav {
+    /* Add other styles as needed */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .navbar-menu {
+    display: flex;
+    /* Align the text elements side by side and move them slightly to the left */
+    align-items: center;
+    margin-left: -10px;
+    padding-right: 20%;
+  }
+  .navbar-menu a {
+    display: block;
+    /* Remove the padding and change the font size to make the text elements fit side by side */
+    padding: 0;
+    font-size: 18px;
+  }
+  /* Add some space between the text elements */
+  .navbar-menu a + a {
+    margin-left: 50%;
+  }
+  /* Hide the hamburger icon */
+  .navbar-icon {
+    display: none;
+  }
+  /* Hide the close button */
+  .navbar-close {
+    display: none;
+  }
+}
