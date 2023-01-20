@@ -3,8 +3,7 @@ nav {
   display: flex;
   align-items: center;
   width: 100%;
-  border-bottom: #000;
-  border-radius: 5px;
+  border-bottom: solid 3px;
 }
 
 a {
@@ -41,7 +40,7 @@ a {
   .navbar-menu {
     display: none;
     position: absolute;
-    top: 114px;
+    top: 117px;
     left: 0;
     background: #ccc;
     width: 100%;
@@ -58,10 +57,7 @@ a {
     text-align: center;
     
   }
-  /* Display the menu when the "open" class is added */
-  .navbar-menu {
-    display: none;
-  }
+  
   .navbar-menu.open {
     display: block;
   }

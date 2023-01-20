@@ -11,6 +11,11 @@ function About() {
         Node.js, and Express. I am always looking to learn and improve my
         skills, and I am excited to take on new challenges and projects.
       </p>
+      <h2>Hobbyer/Fritid</h2>
+      <h2>Erfaring</h2>
+      <h2>Skills/ferdigheter/programmeringsspråk</h2>
+      <h2>Interresser innen CS</h2>
+      <p>Interresse innen kunstig intelligens og digital sikkerhet, webutvikling</p>
     </div>
   );
 }
