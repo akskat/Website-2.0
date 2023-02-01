@@ -60,6 +60,7 @@ a {
   
   .navbar-menu.open {
     display: block;
+    border-bottom: solid 3px;
   }
   /* Style the close button */
   .navbar-close {
