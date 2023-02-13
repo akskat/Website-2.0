@@ -50,13 +50,13 @@ useEffect(() => {
       </div>
       <div className={`navbar-menu${menuOpen ? " open" : ""}`}>
         <Link to="/about" onClick={toggleMenu}>
-          About
+          Om
         </Link>
         <Link to="/projects" onClick={toggleMenu}>
-          Projects
+        Prosjekt
         </Link>
         <Link to="/contact" onClick={toggleMenu}>
-          Contact
+          Kontakt 
         </Link>
       </div>
     </nav>

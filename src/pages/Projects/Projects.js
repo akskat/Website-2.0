@@ -4,12 +4,11 @@ import React from "react";
 function Projects() {
   return (
     <div>
-      <h1>Projects</h1>
+      <h1>Prosjekter</h1>
       <ul>
-        <li>Project 3: Denne nettsiden</li>
-        <li>Project 3: Pentesting av inspera</li>
-        <li>Project 3: App for å vurdere kommetarfelt?</li>
-        <li>Project 3: Machine Learning prosjekt</li>
+        <h3>Prosjekt 1: Gamle nettsiden</h3>
+        <h3>Prosjekt 2: Denne nettsiden</h3>
+        <h3>Prosjekt 3: Pentesting av inspera</h3>
       </ul>
     </div>
   );

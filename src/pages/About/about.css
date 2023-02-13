@@ -1,0 +1,28 @@
+
+@media (max-width: 860px) {
+    .about-me-text {
+        justify-content: right;
+        width: 70%;
+        margin-top: 5%;
+        margin-left: 20%;
+        font-size: 18px;
+
+        text-align: left;
+    }
+    
+
+  }
+  
+  @media (min-width: 861px) {
+    .about-me-text {
+        justify-content: right;
+        width: 40%;
+        background-color: rgb(205, 214, 214);
+        margin-left: 10%;
+        margin-top: 5%;
+        font-size: 18px;
+        
+        padding: 2%;
+        
+    }
+  }

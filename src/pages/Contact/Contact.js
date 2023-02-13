@@ -4,10 +4,9 @@ import React from "react";
 function Contact() {
   return (
     <div>
-      <h1>Contact</h1>
+      <h1>Kontakt meg</h1>
       <p>
-        You can reach me by email at email@example.com or by phone at
-        555-555-5555.
+        Email: akselnk@stud.ntnu.no
       </p>
     </div>
   );

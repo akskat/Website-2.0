@@ -1,21 +1,25 @@
 // About.js
 import React from "react";
+import "./about.css";
 
 function About() {
   return (
-    <div>
-      <h1>About Me</h1>
+    <div className="about-me-text">
+      <h1>Om meg selv</h1>
+      <div >
       <p>
-        I am a software developer with a passion for building web applications.
-        I have experience with a variety of technologies, including React,
-        Node.js, and Express. I am always looking to learn and improve my
-        skills, and I am excited to take on new challenges and projects.
+        Tekst om meg selv
       </p>
+      </div>
+      <div>
       <h2>Hobbyer/Fritid</h2>
       <h2>Erfaring</h2>
-      <h2>Skills/ferdigheter/programmeringsspråk</h2>
-      <h2>Interresser innen CS</h2>
-      <p>Interresse innen kunstig intelligens og digital sikkerhet, webutvikling</p>
+      <h2>Ferdigheter</h2>
+      <h2>Interresser innen IT</h2>
+      <p>
+        Interresse innen kunstig intelligens, digital sikkerhet og webutvikling
+      </p>
+      </div>
     </div>
   );
 }

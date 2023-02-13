@@ -6,15 +6,15 @@ import "./home.css"
 const Home = () => {
   return (
     <div className="home">
-      <h1>MY NAME</h1>
+      <h1>Aksel Katralen</h1>
       <h2>
-        NTNU, Computer Science
+        Datateknologi
       </h2>
-      <p>
-        Welcome to my personal website! My name is Aksel Katralen and I am
-        currently studying Computer Science at NTNU in Trondheim. On this site,
-        you'll find a selection of my work and projects that demonstrate my
-        skills and abilities in programming. 
+      <h3>NTNU</h3>
+      <p className="home-small-text">
+        Velkommen til min personlige nettside. 
+        Navnet mitt er Aksel Katralen og jeg studerer Datateknologi ved NTNU i Trondheim. 
+        På denne nettsiden finner man informasjon om meg og min kompetanse innen IT og programmering.
       </p>
     </div>
   );
