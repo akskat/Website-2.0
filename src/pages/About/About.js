@@ -32,9 +32,10 @@ function Section({ section, index }) {
 
 function About() {
   const sections = [
-    { title: "Om meg selv", content: "Jeg er student ved NTNU i Trondheim. ", image: aboutMe },
-    { title: "Utdanning", content: "Jeg går fjerde året på Datateknologi med spesialisering innen kunstig intelligens. I tillegg går jeg også Kommunikasjonsteknologi og digital sikkerhet med spesialisering innen informasjonssikkerhet.", image: education },
+    { title: "Om meg selv", content: "Jeg er 23 år gammel student fra Hamar som studerer ved NTNU i Trondheim. ", image: aboutMe },
+    { title: "Utdanning", content: "Jeg går fjerde året på Datateknologi med spesialisering innen kunstig intelligens. I tillegg går jeg også Kommunikasjonsteknologi og digital sikkerhet med spesialisering innen informasjonssikkerhet. Våren 2024 skal jeg på utveklsing til UC Berkeley i USA.", image: education },
     { title: "Jobberfaring", content: "Tekst om jobberfaring.", image: jobs },
+    { title: "Verv", content: "Tekst om fritidsaktiviteter.", image: freetime },
     { title: "Fritidsaktiviteter", content: "Tekst om fritidsaktiviteter.", image: freetime },
   ];
 
