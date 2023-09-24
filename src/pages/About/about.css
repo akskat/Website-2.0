@@ -1,28 +1,63 @@
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+  color: white;
+  padding: 20px;
+}
 
-@media (max-width: 860px) {
-    .about-me-text {
-        justify-content: right;
-        width: 70%;
-        margin-top: 5%;
-        margin-left: 20%;
-        font-size: 18px;
+.section {
+  width: 100%;
+  max-width: 1200px;
+  margin: 40px 0;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
 
-        text-align: left;
-    }
-    
+.section.visible {
+  opacity: 1;
+}
 
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content .text,
+.content .image {
+  width: 100%;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.content .text {
+  margin-bottom: 20px;
+}
+
+.image img {
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  object-fit: contain;
+  border-radius: 75px;
+}
+
+@media (min-width: 768px) {
+  .content {
+    flex-direction: row;
   }
-  
-  @media (min-width: 861px) {
-    .about-me-text {
-        justify-content: right;
-        width: 40%;
-        background-color: rgb(205, 214, 214);
-        margin-left: 10%;
-        margin-top: 5%;
-        font-size: 18px;
-        
-        padding: 2%;
-        
-    }
+  .content .text,
+  .content .image {
+    width: 50%;
+    text-align: left;
+    padding: 0 40px;
   }
+  .content .text {
+    margin-top: -220px; /* Flytter teksten oppover */
+  }
+  .section:nth-child(even) .content {
+    flex-direction: row-reverse;
+  }
+}

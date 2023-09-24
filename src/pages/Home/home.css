@@ -1,33 +1,143 @@
+.homeTop {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding-bottom: 3vh;
+  flex-direction: column;
+  gap: 3vh;
+}
 
-  @media (max-width: 860px) {
-    .home {
-        justify-content: right;
-        width: 50%;
-        background-color: rgb(146, 146, 146);
-        margin-left: 10%;
-        margin-top: 5%;
-        font-size: 18px;
-        padding: 15%;
-        text-align: center;
-        border-radius: 15%;
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 1vh;
+  margin-top: 100px;
+}
 
-    }
-    .home-small-text{
-        text-align: left;
-    }
+.textContainer h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
 
-  }
+.textContainer p {
+  font-size: 1.3em;
+}
+
+.btnContainer {
+  display: flex;
+  justify-content: left;
+  width: 100%;
+}
+
+.logo {
+  width: 40px;
+  margin-right: 10px;
+  animation: spin 4s linear infinite;
+}
+
+.textContainer button {
+  font-size: 1.2em;
+  padding: 10px 20px;
+  background: white;
+  border: none;
+  color: black;
+  cursor: pointer;
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  transition: background 0.3s ease, transform 0.3s ease;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.textContainer button:hover {
+  background: #f2f2f2;
+  transform: scale(1.05);
+}
+
+.textContainer .changing-text {
+  position: relative;
+  height: 50px;
+  line-height: 150px;
+  font-size: 2.5em;
+  padding-top: 100px;
+  margin-left: 0px;
+  width: 100%;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  opacity: 1;
+  transition: opacity 1s; /* Fade in and fade out duration */
   
-  @media (min-width: 861px) {
-    .home {
-        justify-content: right;
-        width: 40%;
-        background-color: rgb(205, 214, 214);
-        margin-left: 10%;
-        margin-top: 5%;
-        font-size: 18px;
-        
-        padding: 2%;
-        
-    }
+}
+
+.textContainer .changing-text .text {
+  opacity: 0 ;
+  transition: opacity 0.5s ease-in-out;
+  position: absolute;
+  top: 100px;
+  
+}
+
+.textContainer .changing-text .text.show {
+  opacity: 1;
+}
+
+
+.icon {
+  margin-right: 20px;
+  width: 60px; /* Justerer bredden for å gjøre ikonene større */
+  height: 60px; /* Justerer høyden for å gjøre ikonene større */
+  vertical-align: -10px;
+}
+
+
+
+
+.imageContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.sideImage {
+  max-height: 70vh;
+  max-width: 100%;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@media screen and (min-width: 600px) {
+  .homeTop {
+    flex-direction: row;
+    padding-bottom: 0;
   }
+
+  .textContainer {
+    max-width: 600px;
+    text-align: left;
+    margin-left: 5vw;
+    align-items: flex-start;
+    margin-top: -20vh;
+  }
+
+  .btnContainer {
+    align-self: flex-start;
+  }
+
+  .imageContainer {
+    margin-right: 5vw;
+  }
+
+  .textContainer .changing-text {
+    margin-top: 10px;
+  }
+}

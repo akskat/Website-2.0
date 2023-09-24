@@ -1,21 +1,27 @@
-// Home.js
-import React from "react";
-import "./home.css"
+import React from 'react';
+import './home.css';
+import image from '../../images/line-drawing-black (2).svg';
 
 
-const Home = () => {
+
+function Home() {
+
+
   return (
-    <div className="home">
-      <h1>Aksel Katralen</h1>
-      <h2>
-        Datateknologi
-      </h2>
-      <h3>NTNU</h3>
-      <p className="home-small-text">
-        Velkommen til min personlige nettside. 
-        Navnet mitt er Aksel Katralen og jeg studerer Datateknologi ved NTNU i Trondheim. 
-        På denne nettsiden finner man informasjon om meg og min kompetanse innen IT og programmering.
-      </p>
+    <div className="homeTop">
+      <div className="textContainer">
+        <h1>Aksel Katralen</h1>
+        <h3>Student, NTNU Trondheim</h3>
+        <p>Student ved Datateknologi og Kommunikasjonsteknologi og digital sikkerhet </p>
+        <div className="btnContainer">
+          <button>
+            <span>Om meg</span>
+          </button>
+        </div>
+      </div>
+      <div className="imageContainer">
+        <img className="sideImage" src={image} alt="Line Drawing" />
+      </div>
     </div>
   );
 }

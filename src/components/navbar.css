@@ -1,13 +1,15 @@
 nav {
-  background-color: #ccc;
+  background-color: #000000;
   display: flex;
   align-items: center;
   width: 100%;
-  border-bottom: solid 3px;
+  top: 0;
+  z-index: 1000;
+  position: fixed;
 }
 
 a {
-  color: #000;
+  color: #ffffff;
   text-decoration: none;
   padding: 0.5em;
   font-family: "Arial", serif;
@@ -15,39 +17,68 @@ a {
   font-size: 24px;
   justify-content: space-evenly;
   display: block;
+  
 }
 
+.login-container a {
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 14px;
+}
 
-@media (max-width: 860px) {
+.registrer-container a {
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 14px;
+}
+
+.button-container {
+  border-color: #ffffff;
+  border-style: dashed;
+}
+
+@media (max-width: 1000px) {
   nav {
     display: flex;
     flex-direction: row;
     align-items: center;
+    height: 80px;
   }
+
   .navbar-left {
     display: flex;
     align-items: center;
+    padding-left: 2%;
   }
+
   .navbar-right {
-    display: flex;
-    align-items: center;
-    margin-left: auto;
-    margin-right: 10%;
+    display: block;
+    position: fixed;
+    right: 50px;
+    top: 12px;
   }
+
   .navbar-logo {
     display: block;
+    justify-content: left;
+    position: fixed;
+    left: 50px;
+    top: 10px;
   }
+
   .navbar-menu {
-    display: none;
     position: absolute;
-    top: 117px;
+    top: 78px;
     left: 0;
-    background: #ccc;
+    background: #000000;
     width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
   }
+
   .navbar-menu a {
-    display: block;
-    color: #000;
+    color: #ffffff;
     text-decoration: none;
     padding: 0.5em;
     font-family: "Arial", serif;
@@ -55,52 +86,179 @@ a {
     font-size: 24px;
     justify-content: space-evenly;
     text-align: center;
-    
   }
-  
+
+  .navbar-menu a:hover {
+    border-bottom: none;
+  }
+
   .navbar-menu.open {
-    display: block;
-    border-bottom: solid 3px;
+    box-shadow: 0 10px 10px rgba(192, 192, 192, 0.5);
+    max-height: 500px;
   }
-  /* Style the close button */
+
   .navbar-close {
     display: block;
     cursor: pointer;
     float: right;
     margin-right: 10px;
   }
+
+  .button-container {
+    display: inline-flex;
+    justify-content: space-between;
+    border-radius: 40px;
+    top: 20px;
+    right: 60px;
+    border-width: 2px;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+
+  .login-container a {
+    text-align: center;
+    white-space: nowrap;
+    justify-content: space-between;
+    display: inline-flex;
+    font-size: 18px;
+    border-radius: 40px 0px 0px 40px;
+    border-bottom: none;
+    padding: 10px;
+  }
+
+  .registrer-container a {
+    background-color: #ffffff;
+    color: #000000;
+    display: inline-flex;
+    text-align: center;
+    white-space: nowrap;
+    font-size: 18px;
+    justify-content: space-between;
+    border-radius: 0px 40px 40px 0px;
+    border-bottom: none;
+    border-left: solid rgb(0, 0, 0) 3px;
+    padding: 10px;
+  }
+
+  .login-container a:hover {
+    color: #5a5c5fdb;
+    border-bottom: none;
+  }
+
+  .registrer-container a:hover {
+    color: #5a5c5fdb;
+    border-bottom: none;
+  }
 }
 
-@media (min-width: 861px) {
+@media (min-width: 1000.1px) {
   nav {
-    /* Add other styles as needed */
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    height: 80px;
   }
+
+  .navbar-left {
+    display: flex;
+    align-items: center;
+    padding-left: 2%;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  .navbar-right {
+    display: none;
+  }
+
+  .navbar-logo {
+    display: block;
+    justify-content: left;
+    position: fixed;
+    left: 50px;
+    top: 10px;
+  }
+
   .navbar-menu {
     display: flex;
-    /* Align the text elements side by side and move them slightly to the left */
-    align-items: center;
-    margin-left: -10px;
-    padding-right: 20%;
+    align-items: right;
+    justify-content: space-between;
+    left: 380px;
+    margin-left: -100px;
+    top: 28px;
+    position: fixed;
+    gap: 50px;
   }
+
   .navbar-menu a {
     display: block;
-    /* Remove the padding and change the font size to make the text elements fit side by side */
     padding: 0;
     font-size: 24px;
+    border-bottom: solid rgb(0, 0, 0) 3px;
   }
-  /* Add some space between the text elements */
-  .navbar-menu a + a {
-    margin-left: 50%;
+
+  .navbar-menu a:hover {
+    border-bottom: solid #ffffff 3px;
   }
-  /* Hide the hamburger icon */
+
   .navbar-icon {
     display: none;
   }
-  /* Hide the close button */
+
   .navbar-close {
     display: none;
+  }
+
+  .button-container {
+    display: inline-flex;
+    justify-content: space-between;
+    position: fixed;
+    border-radius: 40px;
+    top: 20px;
+    right: 60px;
+    border-width: 2px;
+    align-items: center;
+  }
+
+  .navbar-menu a + a {
+    margin-left: 80px;
+  }
+
+  .login-container a {
+    text-align: center;
+    white-space: nowrap;
+    justify-content: space-between;
+    display: flex;
+    font-size: 18px;
+    border-radius: 40px 0px 0px 40px;
+    border-bottom: none;
+    padding: 10px;
+    align-items: center;
+  }
+
+  .registrer-container a {
+    background-color: #ffffff;
+    display: flex;
+    text-align: center;
+    white-space: nowrap;
+    font-size: 18px;
+    justify-content: space-between;
+    border-radius: 0px 40px 40px 0px;
+    border-bottom: none;
+    border-left: solid rgb(0, 0, 0) 3px;
+    padding: 10px;
+    align-items: center;
+  }
+
+  .login-container a:hover {
+    color: #e6e5e5db;
+    border-bottom: none;
+  }
+
+  .registrer-container a:hover {
+    color: #575757db;
+    border-bottom: none;
   }
 }

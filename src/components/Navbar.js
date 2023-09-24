@@ -1,9 +1,8 @@
-import React from "react";
+import React, { useState, useCallback, useEffect } from "react";
 import { Link } from "react-router-dom";
 import logo from "../images/AK_logo.svg";
-import hamburgerIcon from "../images/Hamburger_icon.svg";
-import closeIcon from "../images/Close_icon.svg";
-import { useState, useCallback, useEffect } from "react";
+import hamburgerIcon from "../images/Hamburger_icon_white.svg";
+import closeIcon from "../images/Close_icon_white.svg";
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -11,32 +10,48 @@ function Navbar() {
 
   const toggleMenu = useCallback(() => {
     setMenuOpen(!menuOpen);
-    setClickCount(0)
+    setClickCount(0);
   }, [menuOpen]);
 
-useEffect(() => {
-  const handleClickOutside = (event) => {
-    if (!event.target.closest(".navbar-menu")) {
-      setClickCount(count => count + 1)
-      if (clickCount >= 1 && menuOpen) {
-        setMenuOpen(false);
-        setClickCount(0);
-        console.log("lool");
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (!event.target.closest(".navbar-menu")) {
+        setClickCount((count) => count + 1);
+        if (clickCount >= 1 && menuOpen) {
+          setMenuOpen(false);
+          setClickCount(0);
+        }
       }
-    }
-  };
-  document.addEventListener("click", handleClickOutside);
-  return () => {
-    document.removeEventListener("click", handleClickOutside);
-  };
-}, [clickCount, menuOpen, setMenuOpen]);
-  
+    };
+    document.addEventListener("click", handleClickOutside);
+    return () => {
+      document.removeEventListener("click", handleClickOutside);
+    };
+  }, [clickCount, menuOpen, setMenuOpen]);
 
   return (
     <nav>
       <div className="navbar-left">
         <Link to="/">
-          <img src={logo} alt="Logo" width={150} className="navbar-logo" onClick={()=>setMenuOpen(false)}/>
+          <img
+            src={logo}
+            alt="Logo"
+            width={90}
+            className="navbar-logo"
+            onClick={() => setMenuOpen(false)}
+          />
+        </Link>
+      </div>
+      
+      <div className={`navbar-menu${menuOpen ? " open" : ""}`}>
+        <Link to="/about" onClick={toggleMenu}>
+          Om
+        </Link>
+        <Link to="/projects" onClick={toggleMenu}>
+          Prosjekter
+        </Link>
+        <Link to="/contact" onClick={toggleMenu}>
+          Kontakt
         </Link>
       </div>
       <div className="navbar-right">
@@ -47,17 +62,6 @@ useEffect(() => {
           className="navbar-icon"
           onClick={toggleMenu}
         />
-      </div>
-      <div className={`navbar-menu${menuOpen ? " open" : ""}`}>
-        <Link to="/about" onClick={toggleMenu}>
-          Om
-        </Link>
-        <Link to="/projects" onClick={toggleMenu}>
-        Prosjekt
-        </Link>
-        <Link to="/contact" onClick={toggleMenu}>
-          Kontakt 
-        </Link>
       </div>
     </nav>
   );
