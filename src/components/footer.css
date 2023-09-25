@@ -1,11 +1,23 @@
 .footer {
-  background-color: #000000;
-  padding-top: 5%;
-  padding-bottom: 5%;
-  color: #ffffff;
+  background-color: black;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 2% 10%;
 }
 
+.footer-text {
+  color: white;
+  text-align: left;
+  font-weight: bold;
+}
 
-.text-padder {
-    padding-left: 10%;
+.footer-icons {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-icons a {
+  color: white;
+  text-decoration: none;
 }

@@ -35,8 +35,7 @@ function About() {
     { title: "Om meg selv", content: "Jeg er 23 år gammel student fra Hamar som studerer ved NTNU i Trondheim. ", image: aboutMe },
     { title: "Utdanning", content: "Jeg går fjerde året på Datateknologi med spesialisering innen kunstig intelligens. I tillegg går jeg også Kommunikasjonsteknologi og digital sikkerhet med spesialisering innen informasjonssikkerhet. Våren 2024 skal jeg på utveklsing til UC Berkeley i USA.", image: education },
     { title: "Jobberfaring", content: "Tekst om jobberfaring.", image: jobs },
-    { title: "Verv", content: "Tekst om fritidsaktiviteter.", image: freetime },
-    { title: "Fritidsaktiviteter", content: "Tekst om fritidsaktiviteter.", image: freetime },
+    { title: "Verv og fritid", content: "Gjennom min studietid har jeg blant annet vært med i linjeforeningens egen revy, Abakusrevyen. Der jobbet jeg i scenegruppa, som hadde ansvar for kontruksjonen av scena og rekvisitter. På fritiden min liker jeg en variert hverdag, som ofte kan fylles med enten bowling, buldring, skogsturer eller sosiale kvelder med venner.", image: freetime },
   ];
 
   return (

@@ -1,4 +1,3 @@
-/* src/pages/Contact/contact.css */
 .contact-container {
     background-color: black;
     color: white;
@@ -6,11 +5,18 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
+    height: 70vh;
     justify-content: center;
 }
 
 .contact-container a {
     color: white;
-    text-decoration: underline;
+    text-decoration: none;
+    margin: 5px;
 }
+
+.icon-links {
+    display: flex;
+    gap: 20px;
+}
+
