@@ -8,6 +8,15 @@
   pointer-events: none;
   
 }
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Forhindrer horisontal scrolling */
+  background-color: black;
+}
+* {
+  box-sizing: border-box;
+}
 
 .App-padding {
   margin-top: 78px;

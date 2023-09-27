@@ -3,8 +3,10 @@ import { Link } from "react-router-dom";
 import logo from "../images/AK_logo.svg";
 import hamburgerIcon from "../images/Hamburger_icon_white.svg";
 import closeIcon from "../images/Close_icon_white.svg";
+import { useTranslation } from "react-i18next";
 
 function Navbar() {
+  const { t } = useTranslation();
   const [menuOpen, setMenuOpen] = useState(false);
   const [clickCount, setClickCount] = useState(0);
 
@@ -45,13 +47,13 @@ function Navbar() {
       
       <div className={`navbar-menu${menuOpen ? " open" : ""}`}>
         <Link to="/about" onClick={toggleMenu}>
-          Om
+          {t('navbar.about')}
         </Link>
         <Link to="/projects" onClick={toggleMenu}>
-          Prosjekter
+          {t('navbar.projects')}
         </Link>
         <Link to="/contact" onClick={toggleMenu}>
-          Kontakt
+          {t('navbar.contact')}
         </Link>
       </div>
       <div className="navbar-right">

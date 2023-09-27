@@ -195,7 +195,7 @@ a {
   .navbar-menu a {
     display: block;
     padding: 0;
-    font-size: 24px;
+    font-size: 2rem;
     border-bottom: solid rgb(0, 0, 0) 3px;
   }
 

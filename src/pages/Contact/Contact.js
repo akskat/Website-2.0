@@ -8,18 +8,26 @@ function Contact() {
     return (
         <div className="contact-container">
             <h1>Kontaktinformasjon</h1>
-            <p>Navn: [Ditt Navn]</p>
-            <p>Telefon: [Ditt Telefonnummer]</p>
+            <h2>Aksel Katralen</h2>
             <div className="icon-links">
-                <a href="mailto:akselnk@stud.ntnu.no" title="E-post" target="_blank" rel="noopener noreferrer">
-                    <EmailIcon sx={{ color: 'white', fontSize: "8rem" }} />
-                </a>
-                <a href="https://www.linkedin.com/in/aksel-katralen-aaa149217/" title="LinkedIn" target="_blank" rel="noopener noreferrer">
-                    <LinkedInIcon sx={{ color: 'white', fontSize: "8rem" }} />
-                </a>
-                <a href="https://github.com/akskat" title="Github" target="_blank" rel="noopener noreferrer">
-                    <GitHubIcon sx={{ color: 'white', fontSize: "8rem" }} />
-                </a>
+                <div className="icon-container">
+                    <div className="icon-title">E-post</div>
+                    <a href="mailto:akselnk@stud.ntnu.no" title="E-post" target="_blank" rel="noopener noreferrer">
+                        <EmailIcon sx={{ color: 'white', fontSize: "10rem" }} />
+                    </a>
+                </div>
+                <div className="icon-container">
+                    <div className="icon-title">LinkedIn</div>
+                    <a href="https://www.linkedin.com/in/aksel-katralen-aaa149217/" title="LinkedIn" target="_blank" rel="noopener noreferrer">
+                        <LinkedInIcon sx={{ color: 'white', fontSize: "10rem" }} />
+                    </a>
+                </div>
+                <div className="icon-container">
+                    <div className="icon-title">Github</div>
+                    <a href="https://github.com/akskat" title="Github" target="_blank" rel="noopener noreferrer">
+                        <GitHubIcon sx={{ color: 'white', fontSize: "10rem" }} />
+                    </a>
+                </div>
             </div>
         </div>
     );

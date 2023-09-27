@@ -8,6 +8,7 @@ import Navbar from "./components/Navbar";
 import "./components/navbar.css";
 import Footer from "./components/Footer";
 import "./components/footer.css";
+import ScrollToTop from "./hooks/ScrollToTop";
 import "./App.css";
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
     <div className="App">
       <Router>
         <Navbar />
+        <ScrollToTop/>
         <div className="App-padding">
         <Routes>
           <Route exact path="/" element={<Home />} />

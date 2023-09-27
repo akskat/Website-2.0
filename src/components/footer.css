@@ -1,23 +1,84 @@
-.footer {
+/* src/components/footer.css */
+
+.footer-container {
   background-color: black;
+  padding: 2% 10%;  /* Øker padding for vanlige skjermer */
+  min-height: 150px;  /* Setter en minimumshøyde */
+}
+
+.footer {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
-  padding: 2% 10%;
+  flex-wrap: wrap;
 }
 
 .footer-text {
   color: white;
-  text-align: left;
-  font-weight: bold;
+  text-align: center;
+  font-weight: 500;
+  font-size: 1rem;  /* Øker fontstørrelse for vanlige skjermer */
 }
 
-.footer-icons {
+.footer-icons, .footer-languages {
   display: flex;
-  gap: 20px;
+  gap: 20px;  /* Øker gap for vanlige skjermer */
 }
 
 .footer-icons a {
   color: white;
   text-decoration: none;
+}
+
+.footer-icons a svg {
+  font-size: 4rem !important;  /* Øker ikonstørrelse for vanlige skjermer */
+}
+
+.footer-languages img {
+  cursor: pointer;
+  border: 2px solid transparent;
+  border-radius: 10%;
+  width: 40px;  /* Øker bredde for vanlige skjermer */
+  background-color: gray;
+}
+
+.footer-languages img.active {
+  border-color: rgb(0, 191, 255);
+}
+
+/* Media query for små skjermer (mobil) */
+@media (max-width: 768px) {
+  .footer-container {
+    padding: 1% 5%;  /* Beholder kompakt padding for mobile visninger */
+    min-height: auto;  /* Nullstiller minimumshøyde for mobile visninger */
+  }
+  .footer-text {
+    font-size: 0.8rem;  /* Reduser fontstørrelse for mobile visninger */
+  }
+  .footer-icons, .footer-languages {
+    gap: 10px;  /* Reduser gap for mobile visninger */
+  }
+  .footer-icons a svg {
+    font-size: 2rem !important;  /* Reduser ikonstørrelse for mobile visninger */
+  }
+  .footer-languages img {
+    width: 30px;  /* Reduser bredde for mobile visninger */
+  }
+  .footer {
+    flex-wrap: nowrap;  /* Forhindrer innpakking */
+    justify-content: space-between;  /* Fordeler plassen mellom elementer */
+    padding-bottom: 30px;
+  }
+  .footer-text, .footer-icons, .footer-languages {
+    margin: 0;  /* Fjern margin */
+    font-size: 0.7rem;
+  }
+  .footer-icons {
+    gap: 0;
+    margin-bottom: -5px;
+  }
+  .footer-icons a{
+    margin: 0px;
+    padding: 5px;
+  }
 }

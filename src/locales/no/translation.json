@@ -1,0 +1,64 @@
+{
+    "navbar": {
+        "about": "Om",
+        "projects": "Prosjekter",
+        "contact": "Kontakt"
+    },
+
+    "home": {
+        "title": "Aksel Katralen",
+        "description": "Student ved Datateknologi og Kommunikasjonsteknologi og digital sikkerhet på NTNU Trondheim.",
+        "aboutBtn": "Om meg"
+    },
+
+    "about": {
+        "sections": {
+        "aboutMe": {
+            "title": "Om meg selv",
+            "content": "Jeg er 23 år gammel og kommer fra Hamar. Til daglig studerer ved NTNU i Trondheim. På fritiden liker jeg å jobbe med egne prosjekter, være sosial med venner og holde meg i aktivitet. Jeg motiveres av utfordringer, og elsker å lære meg nye ting. Alt innen ny teknologi interresserer meg, spesielt innen områdene kunstig intelligens og informasjonssikkerhet."
+        },
+        "education": {
+            "title": "Utdanning",
+            "content": "Jeg går fjerde året på sivilingeniørstudiet Datateknologi (5-årig) med spesialisering innen kunstig intelligens. I tillegg går jeg også Kommunikasjonsteknologi og digital sikkerhet (5-årig) med spesialisering innen informasjonssikkerhet. Jeg forventer med å være ferdig med graden i Kommunikasjonteknologi og digital sikkerhet ved jul 2024, og graden i Datateknologi ved starten av sommeren 2025. Våren 2024 skal jeg på utveklsing til UC Berkeley i USA."
+        },
+        "jobExperience": {
+            "title": "Jobberfaring",
+            "content": "Av jobberfaringen jeg har, vil jeg gjerne trekke frem mitt summer internship hos Statens vegvesen i 2022. Dette var et lærerik og givende internship, der jeg utviklet meg både personlig men også ferdighetsmessig. Under internshipet jobbet jeg på en kartnavigasjonstjeneste, som var rettet mot yrkessjåfører. Jeg ble introdusert til smidig utvikling, frontend-utvikling og API-er."
+        },
+        "volunteeringAndLeisure": {
+            "title": "Verv og fritid",
+            "content": "Gjennom min studietid har jeg blant annet vært med i linjeforeningens egen revy, Abakusrevyen. Der jobbet jeg i scenegruppa, som hadde ansvar for kontruksjonen av scena og rekvisitter. Ellers på fritiden min, liker jeg en variert hverdag, som ofte kan fylles med enten bowling, buldring, skogsturer, trening eller sosiale kvelder med venner."
+        }
+        }
+    },
+
+    "projects": {
+        "title": "Prosjekter og konkurranser",
+        "details": [
+            {
+            "title": "Start NTNU - Gründerjakten 2023",
+            "description": "Vinner av Start NTNU - Gründerjakten 2023. Casekonkurranse arrangert av Start NTNU og Tripletex. Vinnerbidraget gikk ut på å bruke en kombinasjon av big data og maskinlæring for å forbedre og gi merverdi til Tripletex sin regnskapsapp."
+            },
+            {
+            "title": "Enkeltpersonsforetak - norkat.no",
+            "description": "Pågående prosjekt for å lage mitt eget enkeltpersonsforetak. Estimert oppstart for både selskap og nettside er innen mai 2024. Enkeltpersonsforetaket skal brukes til å lage nettsider for små- til mellomstore bedrifter."
+            },
+            {
+            "title": "Personlige nettside - Eldre versjon",
+            "description": "En eldre versjon av min personlige nettside, akselkatralen.com."
+            },
+            {
+            "title": "Prosjekt 3: Pentesting av inspera",
+            "description": "Beskrivelse av prosjekt 3. Se detaljert rapport (PDF)."
+            }
+        ]
+    }, 
+
+    "contact": {
+        "title": "Kontaktinformasjon",
+        "name": "Aksel Katralen",
+        "email": "E-post",
+        "linkedin": "LinkedIn",
+        "github": "Github"
+    }
+}

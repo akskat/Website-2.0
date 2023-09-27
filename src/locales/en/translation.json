@@ -1,0 +1,65 @@
+{
+    "navbar": {
+        "about": "About",
+        "projects": "Projects",
+        "contact": "Contact"
+    },
+
+    "home": {
+        "title": "Aksel Katralen",
+        "description": "Student of Computer Engineering and Communication Technology and digital security at NTNU Trondheim.",
+        "aboutBtn": "About Me"
+    },
+
+    "about": {
+        "sections": {
+            "aboutMe": {
+                "title": "About Me",
+                "content": "I am 23 years old and come from Hamar. I am currently studying at NTNU in Trondheim. In my spare time, I like to work on personal projects, socialize with friends, and keep myself active. I am motivated by challenges and love learning new things. I am interested in everything related to new technology, especially in the areas of artificial intelligence and information security."
+            },
+            "education": {
+                "title": "Education",
+                "content": "I am in my fourth year of the Civil Engineering program in Computer Technology (5-years) with a specialization in artificial intelligence. In addition, I am also studying Communication Technology and Digital Security (5-years) with a specialization in information security. I expect to complete my degree in Communication Technology and Digital Security by Christmas 2024, and the degree in Computer Technology at the beginning of the summer 2025. In the spring of 2024, I will be studying abroad at UC Berkeley in the USA."
+            },
+            "jobExperience": {
+                "title": "Job Experience",
+                "content": "Among the job experiences I have, I would like to highlight my summer internship at Statens vegvesen in 2022. This was a rewarding and educational internship, where I developed both personally and skill-wise. During the internship, I worked on a map navigation service aimed at professional drivers. I was introduced to agile development, frontend development, and APIs."
+            },
+            "volunteeringAndLeisure": {
+                "title": "Volunteering and Leisure",
+                "content": "Throughout my studies, I have been involved in the student association's own revue, Abakusrevyen. There I worked in the stage group, which was responsible for the construction of the stage and props. Otherwise, in my free time, I like a varied everyday life, which can often be filled with either bowling, bouldering, forest trips, exercise, or social evenings with friends."
+            }
+        }
+    },
+
+    "projects": {
+        "title": "Projects and Competitions",
+        "details": [
+            {
+            "title": "Start NTNU - Entrepreneur Hunt 2023",
+            "description": "Winner of Start NTNU - Entrepreneur Hunt 2023. Case competition arranged by Start NTNU and Tripletex. The winning contribution involved using a combination of big data and machine learning to improve and add value to Tripletex's accounting app."
+            },
+            {
+            "title": "Sole Proprietorship - norkat.no",
+            "description": "Ongoing project to establish my own sole proprietorship. Estimated startup for both the company and website is by May 2024. The sole proprietorship will be used to create websites for small to medium-sized businesses."
+            },
+            {
+            "title": "Personal Website - Older Version",
+            "description": "An older version of my personal website, akselkatralen.com."
+            },
+            {
+            "title": "Project 3: Pentesting of inspera",
+            "description": "Description of project 3. See detailed report (PDF)."
+            }
+        ]
+    },
+
+    "contact": {
+        "title": "Contact Information",
+        "name": "Aksel Katralen",
+        "email": "Email",
+        "linkedin": "LinkedIn",
+        "github": "Github"
+    }
+    
+}

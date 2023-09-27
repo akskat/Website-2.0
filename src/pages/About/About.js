@@ -1,5 +1,6 @@
 import React from "react";
 import { useInView } from 'react-intersection-observer';
+import { useTranslation } from 'react-i18next';
 import "./about.css";
 import aboutMe from "../../images/cv-bilde.png";
 import education from "../../images/ntnu.jpg";
@@ -11,6 +12,7 @@ function Section({ section, index }) {
     threshold: 0.5,
     triggerOnce: true,
   });
+  const { t } = useTranslation();  // Legg til denne linjen
 
   return (
     <div
@@ -19,11 +21,11 @@ function Section({ section, index }) {
     >
       <div className="content">
         <div className="text">
-          <h1>{section.title}</h1>
-          <p>{section.content}</p>
+          <h1>{t(section.title)}</h1>
+          <p>{t(section.content)}</p>
         </div>
         <div className="image">
-          <img src={section.image} alt={section.title} />
+          <img src={section.image} alt={t(section.title)} />
         </div>
       </div>
     </div>
@@ -31,11 +33,29 @@ function Section({ section, index }) {
 }
 
 function About() {
+
+
   const sections = [
-    { title: "Om meg selv", content: "Jeg er 23 år gammel student fra Hamar som studerer ved NTNU i Trondheim. ", image: aboutMe },
-    { title: "Utdanning", content: "Jeg går fjerde året på Datateknologi med spesialisering innen kunstig intelligens. I tillegg går jeg også Kommunikasjonsteknologi og digital sikkerhet med spesialisering innen informasjonssikkerhet. Våren 2024 skal jeg på utveklsing til UC Berkeley i USA.", image: education },
-    { title: "Jobberfaring", content: "Tekst om jobberfaring.", image: jobs },
-    { title: "Verv og fritid", content: "Gjennom min studietid har jeg blant annet vært med i linjeforeningens egen revy, Abakusrevyen. Der jobbet jeg i scenegruppa, som hadde ansvar for kontruksjonen av scena og rekvisitter. På fritiden min liker jeg en variert hverdag, som ofte kan fylles med enten bowling, buldring, skogsturer eller sosiale kvelder med venner.", image: freetime },
+    { 
+        title: 'about.sections.aboutMe.title', 
+        content: 'about.sections.aboutMe.content', 
+        image: aboutMe 
+    },
+    { 
+        title: 'about.sections.education.title', 
+        content: 'about.sections.education.content', 
+        image: education 
+    },
+    { 
+        title: 'about.sections.jobExperience.title', 
+        content: 'about.sections.jobExperience.content', 
+        image: jobs 
+    },
+    { 
+        title: 'about.sections.volunteeringAndLeisure.title', 
+        content: 'about.sections.volunteeringAndLeisure.content', 
+        image: freetime 
+    },
   ];
 
   return (

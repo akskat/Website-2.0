@@ -5,42 +5,56 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  padding-bottom: 3vh;
   flex-direction: column;
   gap: 3vh;
+  margin-top: 20px;
+  
 }
+
+
 
 .textContainer {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
-  text-align: center;
+  text-align: left;
   gap: 1vh;
-  margin-top: 100px;
+  
 }
 
 .textContainer h1 {
+  padding-top: 20%;
   font-size: 2.5em;
-  margin-bottom: 20px;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  margin-bottom: -20px;
+  margin-left: 30px;
 }
 
 .textContainer p {
   font-size: 1.3em;
+  justify-content: left;
+  margin-left: 30px;
+  margin-right: 20px;
 }
 
 .btnContainer {
   display: flex;
   justify-content: left;
   width: 100%;
+  margin-top: -15px;
+  margin-left: 20px;
 }
 
-.logo {
-  width: 40px;
-  margin-right: 10px;
-  animation: spin 4s linear infinite;
+.btnContainer span{
+  font-size: 1.2rem;
+  justify-content: center;
 }
+
+.btnContainer .arrow{
+  margin-bottom: -10px;
+  margin-left: 5px;
+}
+
 
 .textContainer button {
   font-size: 1.2em;
@@ -62,44 +76,15 @@
   transform: scale(1.05);
 }
 
-.textContainer .changing-text {
-  position: relative;
-  height: 50px;
-  line-height: 150px;
-  font-size: 2.5em;
-  padding-top: 100px;
-  margin-left: 0px;
-  width: 100%;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-  opacity: 1;
-  transition: opacity 1s; /* Fade in and fade out duration */
-  
-}
-
-.textContainer .changing-text .text {
-  opacity: 0 ;
-  transition: opacity 0.5s ease-in-out;
-  position: absolute;
-  top: 100px;
-  
-}
-
-.textContainer .changing-text .text.show {
-  opacity: 1;
-}
 
 
-.icon {
-  margin-right: 20px;
-  width: 60px; /* Justerer bredden for å gjøre ikonene større */
-  height: 60px; /* Justerer høyden for å gjøre ikonene større */
-  vertical-align: -10px;
-}
+
 
 
 
 
 .imageContainer {
+  padding: 10%;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -115,7 +100,7 @@
   100% { transform: rotate(360deg); }
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 600.1px) {
   .homeTop {
     flex-direction: row;
     padding-bottom: 0;
@@ -124,20 +109,115 @@
   .textContainer {
     max-width: 600px;
     text-align: left;
+    align-items: flex-start;
     margin-left: 5vw;
     align-items: flex-start;
-    margin-top: -20vh;
+    margin-top: -45vh;
   }
+  .textContainer button span {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Legger til litt mellomrom mellom teksten og ikonet */
+}
+
+.textContainer h1{
+  font-size: 3rem;
+  margin-bottom: -20px;
+}
+.btnContainer span{
+  font-size: 1.4rem;
+}
+
+
+.textContainer p{
+  font-size: 2rem;
+}
 
   .btnContainer {
     align-self: flex-start;
+    justify-content: left;
+    margin-top: -20px;
+  }
+
+  .btnContainer .arrow{
+    margin-bottom: 0px;
+    font-size: 1.5rem;
   }
 
   .imageContainer {
-    margin-right: 5vw;
+    padding: 0;
   }
 
   .textContainer .changing-text {
     margin-top: 10px;
   }
+}
+
+@media screen and (max-width: 1250px) {
+  .homeTop {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 120vh;
+  }
+  
+  .textContainer {
+    margin-top: -100px; /* Resetter margin-top til 0, juster denne verdien etter behov */
+    align-items: center;
+    text-align: center;
+  }
+
+  .btnContainer{
+    justify-content: center;
+  }
+  
+  .imageContainer {
+    margin-top: 20px; /* Legger til litt mellomrom mellom teksten og bildet, juster denne verdien etter behov */
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .homeTop {
+    height: 90vh;
+  }
+  .textContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: left;
+    gap: 1vh;
+    margin-top: -100px;
+  }
+  
+  .textContainer h1 {
+    padding-top: 20%;
+    font-size: 2.5em;
+    margin-bottom: -20px;
+    margin-left: 30px;
+  }
+  
+  .textContainer p {
+    font-size: 1.3em;
+    justify-content: left;
+    margin-left: 30px;
+  }
+  
+  .btnContainer {
+    display: flex;
+    justify-content: left;
+    width: 100%;
+    margin-top: -15px;
+    margin-left: 20px;
+  }
+  .imageContainer {
+    margin-top: 0px; /* Legger til litt mellomrom mellom teksten og bildet, juster denne verdien etter behov */
+  }
+
+  
+
+
+
+
+
 }
