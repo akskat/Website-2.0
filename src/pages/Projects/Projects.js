@@ -38,7 +38,18 @@ function Projects() {
     { title: t('projects.details.0.title'), description: t('projects.details.0.description'), image: grunder },
     { title: t('projects.details.1.title'), description: t('projects.details.1.description'), image: norkat },
     { title: t('projects.details.2.title'), description: t('projects.details.2.description'), image: oldwebsite },
-    { title: t('projects.details.3.title'), description: t('projects.details.3.description'), image: insperaImage }
+    { 
+      title: t('projects.details.3.title'), 
+      description: (
+          <span>
+              {t('projects.details.3.description')}{' '}
+              <a href={inspera} target="_blank" rel="noopener noreferrer">
+                  {t('projects.details.3.reportLink')}
+              </a>
+          </span>
+      ), 
+      image: insperaImage 
+  }
   ];
 
   return (

@@ -12,7 +12,7 @@ i18n.use(initReactI18next).init({
       translation: no
     }
   },
-  lng: "en",
+  lng: "no",
   fallbackLng: "en",
   interpolation: {
     escapeValue: false

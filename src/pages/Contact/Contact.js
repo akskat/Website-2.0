@@ -13,19 +13,19 @@ function Contact() {
                 <div className="icon-container">
                     <div className="icon-title">E-post</div>
                     <a href="mailto:akselnk@stud.ntnu.no" title="E-post" target="_blank" rel="noopener noreferrer">
-                        <EmailIcon sx={{ color: 'white', fontSize: "10rem" }} />
+                        <EmailIcon sx={{ color: 'white', fontSize: "10rem", "&:hover": { color: "rgb(210, 210, 210)" } }} />
                     </a>
                 </div>
                 <div className="icon-container">
                     <div className="icon-title">LinkedIn</div>
                     <a href="https://www.linkedin.com/in/aksel-katralen-aaa149217/" title="LinkedIn" target="_blank" rel="noopener noreferrer">
-                        <LinkedInIcon sx={{ color: 'white', fontSize: "10rem" }} />
+                        <LinkedInIcon sx={{ color: 'white', fontSize: "10rem", "&:hover": { color: "rgb(210, 210, 210)" }  }} />
                     </a>
                 </div>
                 <div className="icon-container">
                     <div className="icon-title">Github</div>
                     <a href="https://github.com/akskat" title="Github" target="_blank" rel="noopener noreferrer">
-                        <GitHubIcon sx={{ color: 'white', fontSize: "10rem" }} />
+                        <GitHubIcon sx={{ color: 'white', fontSize: "10rem", "&:hover": { color: "rgb(210, 210, 210)" }  }} />
                     </a>
                 </div>
             </div>

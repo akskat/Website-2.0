@@ -221,3 +221,12 @@
 
 
 }
+
+@media screen and (max-width: 900px) and (orientation: landscape) {
+  .homeTop{
+    height: 150vh;
+  }
+  .imageContainer{
+    margin-bottom: 50px; 
+  }
+}

@@ -15,6 +15,11 @@
   color: white;
   padding: 20px;
 }
+.projects-container a {
+  text-decoration: underline;
+  color: inherit; /* Dette vil sørge for at lenken har samme farge som omkringliggende tekst */
+}
+
 
 .section {
   width: 100%;
