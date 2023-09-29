@@ -45,12 +45,12 @@
             },
             {
             "title": "Personal Website - Older Version",
-            "description": "An older version of my personal website, akselkatralen.com."
+            "description": "An older version of my personal website, akselkatralen.com. This was the first website I created. Developing a website was an educational process. I learned about design, development, and deployment of websites."
             },
             {
-            "title": "Project 3: Pentesting of inspera",
-            "description": "Description of project 3. See detailed report (PDF).",
-            "reportLink": "See detailed report (PDF)"
+            "title": "Bug Hunting and Penetration Testing",
+            "description": "By chance, I discovered a vulnerability that I believe can be exploited during a home examination in the Inspera examination system. This was further reported to Inspera through NTNU.",
+            "reportLink": "Read about the entire vulnerability here."
             }
         ]
     },

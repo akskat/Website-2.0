@@ -45,12 +45,12 @@
             },
             {
             "title": "Personlige nettside - Eldre versjon",
-            "description": "En eldre versjon av min personlige nettside, akselkatralen.com."
+            "description": "En eldre versjon av min personlige nettside, akselkatralen.com. Dette var den første nettside jeg lagde. Å utvikle en nettside var en lærerik prosess. Jeg lærte både om både om design, utvikling og deployering av nettsider."
             },
             {
-            "title": "Prosjekt 3: Pentesting av inspera",
-            "description": "Beskrivelse av prosjekt 3. Se detaljert rapport (PDF).",
-            "reportLink": "Se detaljert rapport (PDF)"
+            "title": "Bughunting og pentesting",
+            "description": "Ved en tilfeldighet oppdaget jeg en svakhet jeg mener kan utnyttes ved en hjemmeeksamen i eksamenssystemet Inspera. Dette ble videre rapportert til Inspera gjennom NTNU.",
+            "reportLink": "Les om hele svakheten her."
             }
         ]
     }, 
