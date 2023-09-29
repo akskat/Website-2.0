@@ -6,6 +6,12 @@
     flex-direction: column;
     align-items: center;
     height: 80vh;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.contact-container.visible {
+    opacity: 1;
 }
 
 .contact-container h1{

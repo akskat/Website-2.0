@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
 import './projects.css';
 import grunder from "../../images/grunder.jpeg";
@@ -9,19 +9,24 @@ import inspera from "../../pdfs/Inspera.pdf";
 import { useTranslation } from 'react-i18next';
 
 function ProjectSection({ project, index }) {
-  const { ref, inView } = useInView({
-      threshold: 0.5,
-      triggerOnce: true,
-  });
+  const [ref, inView] = useInView();
+  const [activated, setActivated] = useState(false);
+  
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setActivated(true);
+    }, 300);
 
-  // Endret betingelsen fra index % 2 === 0 til index % 2 !== 0 for å bytte sidene.
+    return () => clearTimeout(timer);
+  }, []);
+  
   const imageClass = `project-image-${index}`;
   return (
       <div
-          ref={ref}
+          ref={activated ? ref : null}
           className={`section ${index % 2 !== 0 ? 'text-left' : 'text-right'} ${inView ? 'visible' : ''}`}
       >
-          <div className="content">
+          <div className="project-content">
               <div className="text">
                   <h2>{project.title}</h2>
                   <p>{project.description}</p>

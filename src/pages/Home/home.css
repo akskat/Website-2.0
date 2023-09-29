@@ -8,10 +8,13 @@
   flex-direction: column;
   gap: 3vh;
   margin-top: 20px;
-  
+  transition: opacity 1s ease-in-out;
+  opacity: 0;
 }
 
-
+.homeTop.visible {
+  opacity: 1;  /* Gjør elementet helt synlig når det kommer inn i visningen */
+}
 
 .textContainer {
   display: flex;
@@ -213,13 +216,6 @@
   .imageContainer {
     margin-top: 0px; /* Legger til litt mellomrom mellom teksten og bildet, juster denne verdien etter behov */
   }
-
-  
-
-
-
-
-
 }
 
 @media screen and (max-width: 900px) and (orientation: landscape) {

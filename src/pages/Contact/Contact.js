@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import EmailIcon from '@mui/icons-material/Email';
@@ -7,9 +7,18 @@ import { useTranslation } from 'react-i18next';
 
 function Contact() {
     const { t } = useTranslation();
+    const [visible, setVisible] = useState(false);
+
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setVisible(true);
+        }, 300);  // Du kan justere tiden her for å kontrollere hvor raskt innholdet blir synlig
+
+        return () => clearTimeout(timer);  // Rydd opp timeren når komponenten fjernes
+    }, []);
 
     return (
-        <div className="contact-container">
+        <div className={`contact-container ${visible ? 'visible' : ''}`}>
             <h1>{t('contact.title')}</h1>
             <h2>{t('contact.name')}</h2>
             <div className="icon-links">

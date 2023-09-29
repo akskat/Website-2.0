@@ -1,3 +1,5 @@
+/* Generell styling */
+
 .about-container {
   display: flex;
   flex-direction: column;
@@ -5,12 +7,13 @@
   background-color: black;
   color: white;
   padding: 20px;
+  margin-bottom: 30px;
 }
 
 .section {
   width: 100%;
   max-width: 1200px;
-  margin: 40px 0;
+  margin: 20px 0;
   opacity: 0;
   transition: opacity 1s ease-in-out;
 }
@@ -25,39 +28,83 @@
   align-items: center;
 }
 
-.content .text,
-.content .image {
+.text {
   width: 100%;
-  text-align: center;
-  padding: 0 20px;
+  text-align: left;
+  margin-bottom: 30px;  /* Økt avstand mellom tekst og bilde */
 }
 
-.content .text {
-  margin-bottom: 20px;
-}
-
-.image img {
+.about-image img {
   width: 100%;
   height: auto;
   max-height: 400px;
   object-fit: contain;
-  border-radius: 75px;
 }
 
-@media (min-width: 768px) {
+/* Spesifikk styling for skjermer som er større enn 1200px */
+
+@media (min-width: 1200px) {
   .content {
-    flex-direction: row;
+      flex-direction: row;
+      justify-content: space-between;
   }
-  .content .text,
-  .content .image {
-    width: 50%;
-    text-align: left;
-    padding: 0 40px;
-  }
+
   .content .text {
-    margin-top: -220px; /* Flytter teksten oppover */
+      width: 45%;
+      max-width: 500px;
+      margin-left: 40px;
+      margin-top: -150px;  /* Justert margin-top til 0 */
+
   }
-  .section:nth-child(even) .content {
-    flex-direction: row-reverse;
+
+  .about-image img {
+      border-radius: 15px;
+  }
+
+  .section.text-right .content {
+      flex-direction: row-reverse;
+  }
+
+  .section.text-right .text {
+      margin-left: 0;
+      margin-right: 40px;
+  }
+
+  .about-image.image-0 {
+      margin-right: 100px;
+  }
+
+  .about-image.image-1 {
+      margin-left: 20px;
+  }
+
+  .about-image.image-2 {
+      margin-right: 20px;
+  }
+
+  .about-image.image-3 {
+      margin-left: 20px;
+  }
+}
+
+/* Spesifikk styling for skjermer som er mindre enn 1200px */
+
+@media (max-width: 1199.9px) {
+  .content {
+      flex-direction: column;
+      align-items: center;
+      margin-top: -20px;
+  }
+
+  .text {
+      margin-bottom: 30px;  /* Økt avstand mellom tekst og bilde */
+      max-width: 600px;
+      margin-left: 15px;
+  }
+
+  .about-image img {
+      width: 100%;
+      border-radius: 15px;
+      margin: 0;
   }
 }
